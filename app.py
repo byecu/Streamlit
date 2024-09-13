@@ -4,6 +4,7 @@ import cv2
 import numpy
 import utils
 import io
+from camera_input_live import camera_input_live
 
 def play_video(video_source):
     camera = cv2.VideoCapture(video_source)
