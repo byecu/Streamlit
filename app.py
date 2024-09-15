@@ -4,6 +4,7 @@ import cv2
 import numpy
 import utils
 import io
+from camera_input_live import camera_input_live
 
 def play_video(video_source):
     camera = cv2.VideoCapture(video_source)
@@ -82,4 +83,4 @@ if source_radio == "VIDEO":
         st.write("Click on 'Browse Files' in the sidebar to run inference on an video.")
 
 if source_radio == "WEBCAM":
-    play_video(0)
+    play_live_camera()
